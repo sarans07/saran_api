@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:saran_api/Board.dart';
+import 'package:saran_api/Jokes.dart';
+import 'package:saran_api/Student.dart';
 import 'package:saran_api/api.dart';
 import 'package:saran_api/cat.dart';
+import 'package:saran_api/public.dart';
+import 'package:saran_api/ran.dart';
+import 'package:saran_api/random.dart';
+import 'package:saran_api/todo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +40,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: cat()
+      debugShowCheckedModeBanner: false,
+      home: public()
     );
   }
 }
